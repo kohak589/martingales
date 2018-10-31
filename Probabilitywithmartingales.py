@@ -31,7 +31,6 @@ def game():
 def money(what,x=0):
     #x=1　の時は所持金を掛け金が超えないようにする処理
     global numbers
-    global sub
     while True:
         yourInput = input(what + 'を入力してください：')
         if yourInput.isdigit():
@@ -43,7 +42,6 @@ def money(what,x=0):
             print(what + 'は' + yourInput + '円に決められました')
             numbers.append(float(yourInput))
             return float(yourInput)
-            break
 
 def Main():
     while True:
